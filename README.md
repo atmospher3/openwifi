@@ -60,6 +60,7 @@ e310v2|[MicroPhase](https://github.com/MicroPhase/) new antsdr [Notes](kernel_bo
 antsdr_e200|[MicroPhase](https://github.com/MicroPhase/) enhanced ADALM-PLUTO (smaller/cheaper) [Notes](kernel_boot/boards/antsdr_e200/README.md)|**NO** need
 sdrpi|[HexSDR](https://github.com/HexSDR/) SDR in Raspberry Pi size [Notes](kernel_boot/boards/sdrpi/notes.md)|**NO** need
 zcu102_fmcs2|[Xilinx ZCU102 board](https://www.xilinx.com/products/boards-and-kits/ek-u1-zcu102-g.html) + [FMCOMMS2/3/4](https://www.analog.com/en/design-center/evaluation-hardware-and-software/evaluation-boards-kits/eval-ad-fmcomms2.html)|Need
+zusdr_mini|ZU3EG + AD9361 board, similar to zcu102_fmcs2|Need
 neptunesdr|Low cost Zynq 7020 + AD9361 board|**NO** need
 
 - Check [Porting guide](#Porting-guide) for your new board if it isn't in the list.

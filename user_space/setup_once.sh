@@ -45,6 +45,8 @@ elif [[ $DEVICE_TREE_MODEL_STRING == *"ZC702"* ]]; then
   BOARD_NAME=zc702_fmcs2
 elif [[ $DEVICE_TREE_MODEL_STRING == *"ZC706"* ]]; then
   BOARD_NAME=zc706_fmcs2
+elif [[ $DEVICE_TREE_MODEL_STRING == *"AD9361-ZU3EG"* ]]; then
+  BOARD_NAME=zusdr_mini
 elif [[ $DEVICE_TREE_MODEL_STRING == *"ZCU102"* ]]; then
   BOARD_NAME=zcu102_fmcs2
 elif [[ $DEVICE_TREE_MODEL_STRING == *"ZED"* ]]; then

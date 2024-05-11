@@ -26,7 +26,7 @@ if [ "$#" -gt 3 ]; then
     echo SKIP_rootfs $SKIP_rootfs
 fi
 
-BOARD_NAME_ALL="sdrpi antsdr antsdr_e200 e310v2 zc706_fmcs2 zed_fmcs2 zc702_fmcs2 adrv9361z7035 adrv9364z7020 zcu102_fmcs2 neptunesdr"
+BOARD_NAME_ALL="sdrpi antsdr antsdr_e200 e310v2 zc706_fmcs2 zed_fmcs2 zc702_fmcs2 adrv9361z7035 adrv9364z7020 zcu102_fmcs2 zusdr_mini neptunesdr"
 if [ "$#" -gt 4 ]; then
     BOARD_NAME_ALL=$5
     echo BOARD_NAME_ALL $BOARD_NAME_ALL
@@ -103,7 +103,7 @@ if [ "$SKIP_BOOT" == "0" ]; then
   sudo mkdir -p $SDCARD_DIR/BOOT/openwifi
   for BOARD_NAME_TMP in $BOARD_NAME_ALL
   do
-      if [ "$BOARD_NAME_TMP" == "zcu102_fmcs2" ] || [ "$BOARD_NAME_TMP" == "zcu102_9371" ]; then
+      if [ "$BOARD_NAME_TMP" == "zcu102_fmcs2" ] || [ "$BOARD_NAME_TMP" == "zcu102_9371" ] || [ "$BOARD_NAME_TMP" == "zusdr_mini" ]; then
           dtb_filename_tmp="system.dtb"
           dts_filename_tmp="system.dts"
       else

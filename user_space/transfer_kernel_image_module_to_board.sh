@@ -22,14 +22,14 @@ fi
 DIR_TO_ADI_LINUX_KERNEL=$1
 BOARD_NAME=$2
 
-if [ "$BOARD_NAME" != "antsdr" ] && [ "$BOARD_NAME" != "antsdr_e200" ] && [ "$BOARD_NAME" != "e310v2" ] && [ "$BOARD_NAME" != "sdrpi" ] && [ "$BOARD_NAME" != "neptunesdr" ] && [ "$BOARD_NAME" != "zc706_fmcs2" ] && [ "$BOARD_NAME" != "zc702_fmcs2" ] && [ "$BOARD_NAME" != "zed_fmcs2" ] && [ "$BOARD_NAME" != "adrv9361z7035" ] && [ "$BOARD_NAME" != "adrv9364z7020" ] && [ "$BOARD_NAME" != "zcu102_fmcs2" ]; then
+if [ "$BOARD_NAME" != "antsdr" ] && [ "$BOARD_NAME" != "antsdr_e200" ] && [ "$BOARD_NAME" != "e310v2" ] && [ "$BOARD_NAME" != "sdrpi" ] && [ "$BOARD_NAME" != "neptunesdr" ] && [ "$BOARD_NAME" != "zc706_fmcs2" ] && [ "$BOARD_NAME" != "zc702_fmcs2" ] && [ "$BOARD_NAME" != "zed_fmcs2" ] && [ "$BOARD_NAME" != "adrv9361z7035" ] && [ "$BOARD_NAME" != "adrv9364z7020" ] && [ "$BOARD_NAME" != "zcu102_fmcs2" ] && [ "$BOARD_NAME" != "zusdr_mini" ]; then
     echo "\$BOARD_NAME is not correct. Please check!"
     exit 1
 else
     echo "\$BOARD_NAME is found!"
 fi
 
-if [ "$BOARD_NAME" == "zcu102_fmcs2" ] || [ "$BOARD_NAME" == "zcu102_9371" ]; then
+if [ "$BOARD_NAME" == "zcu102_fmcs2" ] || [ "$BOARD_NAME" == "zcu102_9371" ] || [ "$BOARD_NAME" == "zusdr_mini" ]; then
     LINUX_KERNEL_IMAGE=$DIR_TO_ADI_LINUX_KERNEL/arch/arm64/boot/Image
     DTB_FILENAME="system.dtb"
 else
